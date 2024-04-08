@@ -5,7 +5,10 @@ var nombreRapido = '';
 
 function agregar() {
     const nombreInput = document.getElementById('nombreInput').value;
-
+    if (nombreInput == null || nombreInput == "") {
+        return alert("No has ingresado nada")
+    }
+   else{
     var task = {
         nombre: nombreInput,
         tachado: false,
@@ -14,6 +17,7 @@ function agregar() {
     };
     arrayTask.push(task);
     actualizarTabla();
+}
 }
 
 function actualizarTabla() {

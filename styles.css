@@ -9,17 +9,21 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: left;
 }
 
@@ -35,17 +39,24 @@ button {
     cursor: pointer;
     border-radius: 4px;
     margin-right: 10px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 12px;
     width: 70%;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    transition: border-color 0.3s ease;
 }
 
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
